@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Задание #1 (стилизируем nav , а именно выставляем li на уровень с друг другом, отступ между блоками 25px, цвет ссылки на ваш выбор.
+      Расположение первой навигации по левой стороне, второй навигации по центру , третья - справа.
+      Стилизацию nav , li ,a - можно взять из домашки #4.
+      ) -->
+    <div>
+      <nav>
+        <ul class="list list-left">
+          <li class="list-item">
+            <a href="#" class="list-link">Пункт #1</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Пункт #1</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Пункт #1</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <nav>
+        <ul class="list list-center">
+          <li class="list-item">
+            <a href="#" class="list-link">Пункт #1</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Пункт #1</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Пункт #1</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <nav>
+        <ul class="list list-right">
+          <li class="list-item">
+            <a href="#" class="list-link">Пункт #1</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Пункт #1</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Пункт #1</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+    </div>
+    <div>
+      <div>
+        <!-- Шрифт из google-fonts -->
+        <h1 class="font-popins font-popins-100">Popins 100</h1>
+        <h1 class="font-popins font-popins-300">Popins 300</h1>
+        <h1 class="font-popins font-popins-400">Popins 400</h1>
+        <h1 class="font-popins font-popins-700">Popins 700</h1>
+      </div>
+      <div>
+        <!-- Шрифт локальный (https://bestfonts.pro/font/akronim -скачиваем и подключаем woff формат) -->
+        <h1 class="font-akronim font-akronim-400">akronim 400</h1>
+        <h1 class="font-akronim font-akronim-400">
+          Lorem ipsum dolor sit amet.
+        </h1>
+      </div>
+    </div>
+    <!-- Блок текст - стилизируем такими свойствами:
+      1. Заливка любого цвета (у каждого тега p свой цвет заливки)
+      2. Цвет текста (если заливка темная , цвет текста выбираем светлым (на выбор))
+      3. У блока должны быть округленные углы (10px)
+      4. Между блоками отступ (вниз или вверх) - 25px  
+    -->
+    <div>
+      <!-- text-align (left  , center , right) -->
+      <p class="text text-left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+        expedita.
+      </p>
+      <p class="text text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+        expedita.
+      </p>
+      <p class="text text-right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+        expedita.
+      </p>
+    </div>
+    <!-- Стилизируем ссылки в черный цвет изначально
+      1.На каждой ссылке есть дополнительный класс, согласно этого класса создать для каждой ссылки свой hover эффект 
+        пример - класс hover-link-red  => цвет ссылки при наведении на нее красный
+    -->
+    <div>
+      <!-- hover link, с свойством transition -->
+      <a href="#" class="hover-link hover-link-red">Пункт #1</a>
+      <a href="#" class="hover-link hover-link-blue">Пункт #1</a>
+      <a href="#" class="hover-link hover-link-green">Пункт #1</a>
+      <a href="#" class="hover-link hover-link-yellow">Пункт #1</a>
+      <a href="#" class="hover-link hover-link-grey">Пункт #1</a>
+    </div>
+
+    <!-- Задание со звездочкой
+      стилизовать существующие блоки солгасно макету (https://prnt.sc/1vet657 ). Можно дописывать классы только в тех местах где есть class="".
+      Зависимости или стилизацию от тегов не делать.
+    -->
+    <div>
+      <div>
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+      </div>
+      <div>
+        <div class="square s1"></div>
+        <div class="square s2"></div>
+        <div class="square s3"></div>
+      </div>
+    </div>
+    <div>
+      <div class="circle-square">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+      </div>
+      <div class="circle-square">
+        <div class="square s1"></div>
+        <div class="square s2"></div>
+        <div class="square s3"></div>
+      </div>
+    </div>
+  </body>
+</html>
